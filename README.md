@@ -59,6 +59,10 @@ Daftar screenshoot dari aplikasi CRUD ini
 | Tampilan Edit   | ![screenshot-localhost_8000-2020 09 25-20_01_33](https://user-images.githubusercontent.com/25566307/94270213-eeb96d80-ff69-11ea-8628-f41a09948ec3.png) | ![screenshot-localhost_8000-2020 09 25-20_02_19](https://user-images.githubusercontent.com/25566307/94270298-0abd0f00-ff6a-11ea-8747-e199d753cf17.png) |
 | Tampilan Hapus  | ![screenshot-localhost_8000-2020 09 25-20_02_19](https://user-images.githubusercontent.com/25566307/94270298-0abd0f00-ff6a-11ea-8747-e199d753cf17.png) | ![screenshot-localhost_8000-2020 09 25-20_03_27](https://user-images.githubusercontent.com/25566307/94270418-30e2af00-ff6a-11ea-8517-18352e33846a.png) |
 
+### Link Video Demo
+
+https://res.cloudinary.com/devloops7/video/upload/v1601039782/video/screencast-nimbus-capture-2020.09.25-17_19_11_ivgtkj.webm
+
 ### LICENSE
 
 [MIT License | Copyright (c) 2020 Dhiya Reksa Kusumojati Brameswanto](https://github.com/dhiyo7/Crud-MySQL-NodeJS/blob/master/LICENSE)

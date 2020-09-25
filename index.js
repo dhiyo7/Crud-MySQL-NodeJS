@@ -55,21 +55,21 @@ app.post("/simpan", (req, res) => {
 
 // route delete
 app.get("/delete/:id", (req, res) => {
-  let idProduk = req.paramas.id;
-  let sql = "DELETE FROM produk WHERE id=" + idProduk + "";
-  let query = conn.query(sql, (err, results) => {
-    if (err) throw err;
-    res.redirect("/");
+    let idProduk = req.body.id;
+    let sql = "DELETE FROM produk WHERE id =" + idProduk + "";
+    let query = conn.query(sql, (err, results) => {
+      if (err) throw err;
+      res.redirect("/");
+    });
   });
-});
 
 // route view Edit
 app.get("/edit/:id", (req, res) => {
-  let idProduk = req.paramas.id;
+  let idProduk = req.params.id;
   let sql = "SELECT * FROM produk WHERE id=" + idProduk + "";
   let query = conn.query(sql, (err, results) => {
     if (err) throw err;
-    res.render("edit", {
+    res.render("edit_produk", {
       results: results[0],
     });
   });

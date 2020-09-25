@@ -31,21 +31,15 @@ Aplikasi web sederhana untuk melakukan *Create*, *Read*, *Update*, dan *Delete* 
 > - harga
 > 
 > Lalu setting koneksi database yang sudah dibuat pada file *index.js* sesuaikan pada settingan MySQL anda apabila usernya berbeda dan mempunyai password.
-> 
-> ```javascript
-> //config koneksi
-> const conn = mysql.createConnection({
->   host: "localhost",
->   user: "root",
->   password: "",
->   database: "",
-> });
-> ```
-
-### Menjalanjan Projek
 
 ```javascript
-node index
+
+```
+
+### Menjalankan Projek
+
+```javascript
+npm run start
 ```
 
 ### Hasil

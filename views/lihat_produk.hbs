@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD NodeJS MySQL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 style="text-align:center">CRUD Produk Arkademy | Fullstack Mobile batch 19</h1>
+    <div class="container">
+        <div>
+            <form action="/simpan" method="POST">
+                <input placeholder="Nama Produk" name="nama_produk">
+                <input placeholder="Jumlah Barang" name="jumlah">
+                <input placeholder="Harga" name="harga">
+                <input placeholder="keterangan" name="keterangan">
+                <input class="btn btn-success btn-sm" type="submit">
+            </form>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nama Produk</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Keterangan</th>
+                    <th scope="col">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each results}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{nama_produk}}</td>
+                    <td>{{jumlah}}</td>
+                    <td>{{harga}}</td>
+                    <td>{{keterangan}}</td>
+                    <td>
+                        <a class="btn btn-primary" href="/edit/{{id}}">Edit</a>
+                        <a class="btn btn-danger" href="/delete/{{id}}">Delete</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

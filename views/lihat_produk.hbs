@@ -7,6 +7,16 @@
     <title>CRUD NodeJS MySQL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        table {
+            counter-reset: section;
+        }
+
+        .count:before {
+            counter-increment: section;
+            content: counter(section);
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +45,7 @@
             <tbody>
                 {{#each results}}
                 <tr>
-                    <td>{{id}}</td>
+                    <td class="count"></td>
                     <td>{{nama_produk}}</td>
                     <td>{{jumlah}}</td>
                     <td>{{harga}}</td>
@@ -49,7 +59,6 @@
             </tbody>
         </table>
     </div>
-
 </body>
 
 </html>

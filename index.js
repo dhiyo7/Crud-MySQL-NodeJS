@@ -55,8 +55,8 @@ app.post("/simpan", (req, res) => {
 
 // route delete
 app.get("/delete/:id", (req, res) => {
-    let idProduk = req.body.id;
-    let sql = "DELETE FROM produk WHERE id =" + idProduk + "";
+    let idProduk = req.params.id;
+    let sql = "DELETE FROM produk WHERE id=" + idProduk + "";
     let query = conn.query(sql, (err, results) => {
       if (err) throw err;
       res.redirect("/");

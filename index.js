@@ -10,7 +10,7 @@ const conn = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "arkademy",
+  database: "",
 });
 
 //connect ke database

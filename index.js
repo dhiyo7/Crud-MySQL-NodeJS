@@ -79,7 +79,7 @@ app.get("/edit/:id", (req, res) => {
 app.post("/update", (req, res) => {
   let data = req.body;
   let sql =
-    "UPDATE products SET nama_produk = '" +
+    "UPDATE produk SET nama_produk = '" +
     data.nama_produk +
     "',jumlah = " +
     data.jumlah +

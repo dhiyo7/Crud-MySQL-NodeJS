@@ -10,15 +10,18 @@
 </head>
 
 <body>
-    <h1>EDIT PRODUK</h1>
-    <form action="/update" method="POST">
-        <input name="id" value="{{results.id}}" type="hidden">
-        <input name="nama_produk" value="{{results.nama_produk}}">
-        <input name="jumlah" value="{{results.jumlah}}">
-        <input name="harga" value="{{results.harga}}">
-        <input name="keterangan" value="{{results.keterangan}}">
-        <input type="submit">
-    </form>
+
+    <h1 style="text-align:center">EDIT PRODUK</h1>
+    <div class="container">
+        <form class="form-inline form-group" action="/update" method="POST">
+            <input class="form-control" name="id" value="{{results.id}}" type="hidden">
+            <input class="form-control" name="nama_produk" value="{{results.nama_produk}}">
+            <input class="form-control" name="jumlah" value="{{results.jumlah}}">
+            <input class="form-control" name="harga" value="{{results.harga}}">
+            <input class="form-control" name="keterangan" value="{{results.keterangan}}">
+            <input class="btn btn-success" type="submit">
+        </form>
+    </div>
 </body>
 
 </html>
